@@ -43,4 +43,179 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #272727;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Forum", cursive;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 71px;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  position: relative;
+  max-width: 1146px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 60px 0;
+  z-index: 2;
+}
+
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__user {
+  min-width: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__user img {
+  max-width: 22px;
+  height: 20px;
+  padding: 0 20px;
+}
+
+.header__btn {
+  width: 30px;
+  padding: 8px 0;
+  margin-left: auto;
+  position: relative;
+  cursor: pointer;
+}
+
+.header__btn span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background: #fff;
+  top: 0;
+  bottom: 0;
+}
+
+.header__btn::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background: #fff;
+  top: 0;
+  left: 0;
+}
+
+.header__btn::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background: #fff;
+  bottom: 0;
+  left: 0;
+}
+
+.header-top {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, right top, color-stop(60%, #fff), color-stop(40%, #272727));
+  background: linear-gradient(to right, #fff 60%, #272727 40%);
+}
+
+.header-top__inner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.header-top__img {
+  position: absolute;
+  top: calc(50% - 80px);
+  right: calc(40% - 160px);
+}
+
+.header-top__box {
+  position: absolute;
+  top: 280px;
+}
+
+.header-top__link {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  line-height: 100px;
+  padding-left: 294px;
+  position: relative;
+}
+
+.header-top__link::before {
+  content: "";
+  position: absolute;
+  width: 130px;
+  height: 1px;
+  background-color: #272727;
+  right: 220px;
+  bottom: 10px;
+}
+
+.header-top__info {
+  position: absolute;
+  right: 0;
+  bottom: 60px;
+  color: #fff;
+  text-align: right;
+}
+
+.header-top__name {
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.header-top__content {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 23px;
+  color: #c2c2c2;
+  margin: 9px 0;
+}
+
+.header-top__price {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #efc58b;
+}
 /*# sourceMappingURL=style.css.map */

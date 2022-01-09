@@ -1,2 +1,126 @@
 @import "reset";
 @import "var";
+@import "global";
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 60px 0;
+  z-index: 2;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__user {
+    min-width: 260px;
+    display: flex;
+    align-items: center;
+    img {
+      max-width: 22px;
+      height: 20px;
+      padding: 0 20px;
+    }
+  }
+  &__btn {
+    width: 30px;
+    padding: 8px 0;
+    margin-left: auto;
+    position: relative;
+    cursor: pointer;
+    span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      border-radius: 1px;
+      background: #fff;
+      top: 0;
+      bottom: 0;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      border-radius: 1px;
+      background: #fff;
+      top: 0;
+      left: 0;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 2px;
+      border-radius: 1px;
+      background: #fff;
+      bottom: 0;
+      left: 0;
+    }
+  }
+}
+.header-top {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #fff 60%, $black 40%);
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  &__img {
+    position: absolute;
+    top: calc(50% - 80px);
+    right: calc(40% - 160px);
+  }
+  &__box {
+    position: absolute;
+    top: 280px;
+  }
+  &__link {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    line-height: 100px;
+    padding-left: 294px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 130px;
+      height: 1px;
+      background-color: $black;
+      right: 220px;
+      bottom: 10px;
+    }
+  }
+  &__info {
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+    color: #fff;
+    text-align: right;
+  }
+  &__name {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  &__content {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 23px;
+    color: #c2c2c2;
+    margin: 9px 0;
+  }
+  &__price {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #efc58b;
+  }
+}

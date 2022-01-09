@@ -1,0 +1,22 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: $black;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Forum", cursive;
+}
+h1 {
+  font-size: 64px;
+  line-height: 71px;
+  letter-spacing: 0.03em;
+}
+.container {
+  position: relative;
+  max-width: 1146px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
