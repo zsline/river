@@ -11,6 +11,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:ital,wght@0,300;0,400;0,500;1,300&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -20,9 +22,9 @@
       <div class="header__inner">
         <a href="#"><img src="images/logo-black.svg" alt=""></a>
         <div class="header__user">
-          <img src="images/heart.svg" alt="">
-          <img src="images/user.svg" alt="">
-          <img src="images/lock.svg" alt="">
+          <a href="#"><img src="images/heart.svg" alt=""></a>
+          <a href="#"><img src="images/user.svg" alt=""></a>
+          <a href="#"><img src="images/lock.svg" alt="">1</a>
           <div class="header__btn">
             <span></span>
           </div>
@@ -33,32 +35,167 @@
   <section class="header-top">
     <div class="container">
       <div class="header-top__inner">
-            <img class="header-top__img" src="images/river-top.png" alt="">
-    
-      <div class="header-top__box">
-        <div class="header-top__title">
-          <h1>HIGH JEWELRY</h1>
+        <img class="header-top__img" src="images/river-top.png" alt="">
+
+        <div class="header-top__box">
+          <div class="header-top__title">
+            <h1>HIGH JEWELRY</h1>
+          </div>
+          <a class="header-top__link" href="#">Смотреть коллекцию</a>
+
         </div>
-        <a class="header-top__link" href="#">Смотреть коллекцию</a>
+        <div class="header-top__lang">
+          <a class="lang active" href="#">ru</a>
+          <a class="lang" href="#">en</a>
+        </div>
+        <div class="header-top__info">
+          <div class="header-top__name">
+            КОЛЬЦО TRINITY, Cartier
+          </div>
+          <div class="header-top__content">
+            Белое золото, бриллианты
+          </div>
+          <div class="header-top__price">
+            498 000 ₽
+          </div>
+        </div>
       </div>
-      <div class="header-top__info">
-        <div class="header-top__name">
-          КОЛЬЦО TRINITY, Cartier
+    </div>
+  </section>
+  <section class="chapter">
+    <div class="chapter__inner">
+      <div class="chapter__item" style="background-image: url(images/man.jpg);">
+        <a href="#">Перейти в раздел</a>
+        <h3>Для мужчин</h3>
+        <span></span>
+      </div>
+      <div class="chapter__item" style="background-image: url(images/woman.jpg);">
+        <a href="#">Перейти в раздел</a>
+        <h3>Для женщин</h3>
+        <span></span>
+      </div>
+    </div>
+  </section>
+  <div class="map">
+    <div class="container">
+      <div class="map__search">
+        <h4>Найди<br> бутик около себя</h4>
+        <p>Введите свой адрес и узнайте о самых ближайших бутиках к вам</p>
+        <div class="map__search-item">
+          <input type="search" id="map-search" name="q" aria-label="Search through site content"
+            placeholder="Введите адрес">
+          <button><img src="images/arrow.svg" alt=""></button>
         </div>
-        <div class="header-top__content">
+      </div>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d35937.53743846835!2d37.66555543748301!3d55.73945939882722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1641810485862!5m2!1sru!2sua"
+      height="604" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+  <div class="shop">
+    <div class="shop__item">
+      <img src="images/shop-1.png" alt="">
+      <div class="shop__info">
+        <div class="shop__name">
+          КОЛЬЦО jow’s, Cartier
+        </div>
+        <div class="shop__content">
           Белое золото, бриллианты
         </div>
-        <div class="header-top__price">
+        <div class="shop__price">
+          674 000 ₽
+        </div>
+      </div>
+    </div>
+    <div class="shop__item">
+      <img src="images/shop-2.png" alt="">
+      <div class="shop__info">
+        <div class="shop__name">
+          Серьги moon, HUBLOT
+        </div>
+        <div class="shop__content">
+          Желтое золото, сапфир
+        </div>
+        <div class="shop__price">
           498 000 ₽
         </div>
-        
       </div>
-      </div>
-
-
     </div>
-
+    <div class="shop__item shop__item-center" style="background-image: url(images/shop-center.jpg);">
+      <div class="shop__info">
+        <div class="shop__name">
+          Колье etoile, HUBLOT
+        </div>
+        <div class="shop__content">
+          Белое золото, бриллианты
+        </div>
+        <div class="shop__price">
+          539 000 ₽
+        </div>
+      </div>
+    </div>
+    <div class="shop__item">
+      <img src="images/shop-3.png" alt="">
+      <div class="shop__info">
+        <div class="shop__name">
+          КОЛЬЦО croix, Cartier
+        </div>
+        <div class="shop__content">
+          Желтое, белое, розовое золото
+        </div>
+        <div class="shop__price">
+          432 000 ₽
+        </div>
+      </div>
+    </div>
+    <div class="shop__item">
+      <img src="images/shop-4.png" alt="">
+      <div class="shop__info">
+        <div class="shop__name">
+          серьги win, BLANCPAIN
+        </div>
+        <div class="shop__content">
+          Желтое золото, жемчуг
+        </div>
+        <div class="shop__price">
+          398 000 ₽
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="social">
+    <div class="container">
+      <h4>Мы<br>в социальных сетях</h4>
+    </div>
+    <div class="social__slider">
+<div class="social__slider-item">
+  <img src="images/slide-1.jpg" alt="">
+</div>
+<div class="social__slider-item">
+  <img src="images/slide-2.jpg" alt="">
+</div>
+<div class="social__slider-item">
+  <img src="images/slide-3.jpg" alt="">
+</div>
+<div class="social__slider-item">
+  <img src="images/slide-4.jpg" alt="">
+</div>
+<div class="social__slider-item">
+  <img src="images/slide-5.jpg" alt="">
+</div>
+    </div>
+    <div class="container">
+      <div class="social__box">
+        <a href="#"><img src="images/facebook.svg" alt=""></a>
+        <a href="#"><img src="images/instagram.svg" alt=""></a>
+      </div>
+    </div>
   </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

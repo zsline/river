@@ -14,9 +14,58 @@ h1 {
   line-height: 71px;
   letter-spacing: 0.03em;
 }
+h3 {
+  font-size: 64px;
+  line-height: 71px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+h4 {
+  font-size: 48px;
+  line-height: 53px;
+  letter-spacing: 0.03em;
+}
 .container {
   position: relative;
   max-width: 1146px;
   padding: 0 15px;
   margin: 0 auto;
+}
+.active {
+  color: $black;
+}
+.slick-arrow{
+  position: absolute;
+  bottom: -36px;
+  right: 150px;
+  z-index: 10;
+}
+.slick-prev{
+  position: absolute;
+  bottom: 0px;
+   right: 253px;
+}
+.slick-dots{
+  display: flex;
+  position: absolute;
+  right: 247px;
+  bottom: calc(-38px / 2);
+  z-index: 10;
+}
+.slick-dots li{
+  display: block;
+  max-width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #656565; 
+  margin: 0 8px;
+}
+.slick-dots li button{
+  font-size: 0px;
+ 
+}
+ul .slick-active{
+  background-color: #fff;
 }
