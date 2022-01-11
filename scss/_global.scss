@@ -36,36 +36,42 @@ h4 {
 .active {
   color: $black;
 }
-.slick-arrow{
+.slick-arrow {
   position: absolute;
   bottom: -36px;
-  right: 150px;
+  // right: 150px;
+  right: calc((100vw - 1116px) / 2);
+  // right: 0;
   z-index: 10;
 }
-.slick-prev{
+.slick-prev {
   position: absolute;
   bottom: 0px;
-   right: 253px;
+  right: 253px;
+  cursor: pointer;
 }
-.slick-dots{
+.slick-next {
+  cursor: pointer;
+}
+.slick-dots {
   display: flex;
   position: absolute;
-  right: 247px;
+  right: calc((100vw - 1116px) / 2 - -103px);
   bottom: calc(-38px / 2);
   z-index: 10;
 }
-.slick-dots li{
+.slick-dots li {
   display: block;
   max-width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #656565; 
+  background-color: #656565;
   margin: 0 8px;
+  cursor: pointer;  
 }
-.slick-dots li button{
+.slick-dots li button {
   font-size: 0px;
- 
 }
-ul .slick-active{
+ul .slick-active {
   background-color: #fff;
 }

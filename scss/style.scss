@@ -255,8 +255,8 @@
       background-size: cover;
       background-position: top center;
       color: #fff;
-      .shop__content{
-        color: #E7E7E7;
+      .shop__content {
+        color: #e7e7e7;
       }
     }
     img {
@@ -292,24 +292,90 @@
     color: #e2b67a;
   }
 }
-.social{
+.social {
   background-color: $black;
   color: #fff;
   padding: 100px 0;
-  &__box{
-    img{
+  &__box {
+    img {
       margin-right: 20px;
     }
   }
-  &__slider{
+  &__slider {
     padding-bottom: 50px;
     margin-top: 80px;
-    &-item{
+    &-item {
       margin-left: 25px;
     }
   }
-  button{
+  button {
     background-color: transparent;
-    border: none; 
+    border: none;
+  }
+}
+.contacts {
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  height: 100%;
+  max-height: 710px;
+  &__info {
+    display: inline-block;
+    width: 50%;
+    padding: 180px 0 180px 60%;
+  }
+  &__title {
+    font-size: 18px;
+    line-height: 23px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  &__phone a {
+    display: block;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 28px;
+    color: #959595;
+    margin: 30px 0 110px;
+  }
+  &__new {
+    font-size: 18px;
+    line-height: 23px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+  }
+}
+.new {
+  &__subs {
+  }
+  &__subs-item {
+    position: relative;
+    width: 280px;
+    input {
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid $black;
+        padding: 10px 0;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 23px;
+        color: $black;
+        &::placeholder {
+          color: #959595;
+          font-size: 14px;
+        }
+      }
+      button {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 0;
+        top: 12px;
+        cursor: pointer;
+      }
   }
 }

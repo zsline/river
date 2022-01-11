@@ -96,7 +96,7 @@ h4 {
 .slick-arrow {
   position: absolute;
   bottom: -36px;
-  right: 150px;
+  right: calc((100vw - 1116px) / 2);
   z-index: 10;
 }
 
@@ -104,6 +104,11 @@ h4 {
   position: absolute;
   bottom: 0px;
   right: 253px;
+  cursor: pointer;
+}
+
+.slick-next {
+  cursor: pointer;
 }
 
 .slick-dots {
@@ -111,7 +116,7 @@ h4 {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  right: 247px;
+  right: calc((100vw - 1116px) / 2 - -103px);
   bottom: calc(-38px / 2);
   z-index: 10;
 }
@@ -123,6 +128,7 @@ h4 {
   border-radius: 50%;
   background-color: #656565;
   margin: 0 8px;
+  cursor: pointer;
 }
 
 .slick-dots li button {
@@ -469,7 +475,7 @@ ul .slick-active {
 }
 
 .shop__item-center .shop__content {
-  color: #E7E7E7;
+  color: #e7e7e7;
 }
 
 .shop__item img {
@@ -530,5 +536,91 @@ ul .slick-active {
 .social button {
   background-color: transparent;
   border: none;
+}
+
+.contacts {
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  height: 100%;
+  max-height: 710px;
+}
+
+.contacts__info {
+  display: inline-block;
+  width: 50%;
+  padding: 180px 0 180px 60%;
+}
+
+.contacts__title {
+  font-size: 18px;
+  line-height: 23px;
+  text-align: left;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.contacts__phone a {
+  display: block;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 28px;
+  color: #959595;
+  margin: 30px 0 110px;
+}
+
+.contacts__new {
+  font-size: 18px;
+  line-height: 23px;
+  text-align: left;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.new__subs-item {
+  position: relative;
+  width: 280px;
+}
+
+.new__subs-item input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #272727;
+  padding: 10px 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #272727;
+}
+
+.new__subs-item input::-webkit-input-placeholder {
+  color: #959595;
+  font-size: 14px;
+}
+
+.new__subs-item input:-ms-input-placeholder {
+  color: #959595;
+  font-size: 14px;
+}
+
+.new__subs-item input::-ms-input-placeholder {
+  color: #959595;
+  font-size: 14px;
+}
+
+.new__subs-item input::placeholder {
+  color: #959595;
+  font-size: 14px;
+}
+
+.new__subs-item button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
